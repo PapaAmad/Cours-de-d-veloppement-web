@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avancer et Reculer une Image</title>
+    <style>
+        #img {
+            position: relative;
+        }
+    </style>
+
+    <script>
+        var img = {
+            x: 0,
+            y: 0,
+            avancer: function() {
+                this.x += 20;
+                this.show();
+            },
+            reculer: function() {
+                this.x -= 20;
+                this.show();
+            },
+            show: function() {
+                var resu = "x = " + this.x + "px, y = " + this.y + "px";
+                document.getElementById("resultat").innerHTML = resu;
+                document.getElementById("img").style.left = this.x + "px";
+            }
+        };
+    </script>    
+</head>
+<body>
+
+    <h1>Contrôlez la voiture</h1>
+    <img id="img" src="voiture.jpg"/>
+    <div>
+        <button onclick="img.reculer()"><<</button>
+        <button onclick="img.avancer()">>></button>
+    </div>
+    <div id="resultat"></div>
+
+</body>
+</html>
