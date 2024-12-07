@@ -1,0 +1,28 @@
+Développement web
+
+Application web 
+
+Web : - internet : réseau publique mondial
+      - réseau (local, privé, ouvert)
+      - serveur 
+      - navigateur
+
+système d'information distribué via internet
+
+Jamais mélanger le réseau et les différents éléments utilisés dans le réseau
+
+relation client-serveur
+
+Protocole de communication : quand j'ouvre le navigateur et que je tape une url c'est le protocole http
+
+local area network : LAN
+
+HTML est un langage à délimitation (à balise) 
+
+this permet d'accéder aux attributs de l'objet
+
+
+créer une page contenant un champ nom et un bouton vérifier
+on doit vérifier si le champ est bein rempli et on affiche le résultat sous le champ nom avec comme libellé vérifier
+
+

@@ -1,0 +1,43 @@
+<!--
+créer une page contenant un champ nom et un bouton vérifier
+on doit vérifier si le champ est bein rempli et on affiche 
+le résultat sous le champ nom avec comme libellé vérifier
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo vérification</title>
+    <script>
+        function verification() {
+            var nom = document.getElementById('nom').value;
+            var prenom = document.getElementById('prenom').value;
+            var resu = document.getElementById('resultat');
+
+            if (nom.trim() === "" & prenom.trim() === "") {
+                resu.innerHTML = "Les champ prenom et nom sont vide.";
+            } else if (prenom.trim() === "" & nom.length() > 0) {
+                resu.innerHTML = "Le prenom est vide.";
+            } else if (prenom.length() > 0 & nom.trim() === "") {
+                resu.innerHTML = "Le nom est vide.";
+            } else if (prenom.length() < 2) {
+                resu.innerHTML = "Le prenom n'est pas bien rempli.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Vérification du Nom</h1>
+    <label for="nom">Entrez votre Prénom :</label>
+    <input type="text" id="prenom" name="prenom">
+
+    <label for="nom">Entrez votre nom :</label>
+    <input type="text" id="nom" name="nom">
+
+    <button onclick="verification()">Vérifier</button>
+
+    <div id="resultat"></div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0073e6;
+    padding: 10px 20px;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.active {
+    color: #ffcc00;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Services Table */
+.services-table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+.services-table td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.service-image {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+/* Séparation des champs nom et prénom */
+input[type="text"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+/* Bouton */
+button.btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Style des champs de formulaire */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Style pour les messages d'erreur */
+.error {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Bordure rouge pour les champs invalides */
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+/* Bordure verte pour les champs valides */
+input:valid, textarea:valid {
+    border-color: green;
+}
+
+/* Style des champs correctement remplis */
+input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
+    border-color: green;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objet</title>
+    <script>
+        var voiture = {
+            x:0,
+            y:0,
+            
+            avancer : function(){
+                this.x = this.x + 1;
+                this.show()
+            },
+
+            reculer : function(){
+                this.x = this.x - 1;
+                this.show()
+            },
+            
+            show : function(){
+                var resu = "x = " + this.x,
+                    resu =+ "y = " + this.y
+                document.getElementById("resultat").innerHTML = resu
+
+            }
+        }
+    </script>
+</head>
+<body>
+   <h1>On travaille avec les objet</h1> 
+
+   <div id="resultat">on affiche les résultat</div>
+   <input type="button" value="Reculer" onclick="voiture.avancer()">
+   <input type="button" value="Avancer" onclick="voiture.reculer()">
+</body>
+</html>
